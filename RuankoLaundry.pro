@@ -44,3 +44,5 @@ FORMS += \
     signupwindow.ui \
     mainwindow.ui \
     dialog.ui
+
+ICON = logo.icns

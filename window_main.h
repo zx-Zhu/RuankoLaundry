@@ -15,6 +15,12 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
     void setOrderTable();
+    void askOrderList();
+    void setMemberTable();
+    void askMemberList();
+    void setManageTable();
+    void askManageList();
+    void setOrderSearch(QJsonArray);
 
 private:
     Ui::MainWindow *ui;
@@ -39,6 +45,13 @@ private slots:
     void on_radioButton_5_toggled(bool checked);
     void on_btn_order_clicked();
     void on_btn_history_clicked();
+    void on_tabWidget_currentChanged(int index);
+    void slot_getMemberFinished(int, const QString&);
+    void on_exit_clicked();
+    void slot_getManageFinished(int, const QString&);
+    void on_btn_search_order_clicked();
+    void on_btn_right_clicked();
+    void on_btn_left_clicked();
 };
 
 #endif // WINDOW_MAIN_H

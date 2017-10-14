@@ -21,5 +21,6 @@ int main(int argc, char *argv[])
     QObject::connect(&l,SIGNAL(jumpToMian(QString)),&m,SLOT(showMain(QString)));
     QObject::connect(&l,SIGNAL(jumpToSignup()),&s,SLOT(showSignup()));
     QObject::connect(&s,SIGNAL(signupSucceed(QString)),&l,SLOT(signupSucceed(QString)));
+
     return a.exec();
 }
