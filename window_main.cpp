@@ -33,7 +33,7 @@ MainWindow::MainWindow(QWidget *parent) :
     this->askMemberList();
     this->setManageTable();
     this->askManageList();
-    QWidget:setWindowIcon(QIcon("logo.icns"));
+
 }
 
 MainWindow::~MainWindow()//析构
